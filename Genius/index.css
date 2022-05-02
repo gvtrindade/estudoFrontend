@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul, ol{
+  margin: 0;
+}
+
+header {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.3em;
+}
+
+header a {
+  color: black;
+}
+
+nav {
+  background-color: black;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  padding: 1em 0;
+  justify-content: center;
+}
+
+nav li {
+  padding: 0 1.5em;
+  border-right: 1px solid white;
+}
+
+nav li:last-child {
+  border: none;
+}
+
+nav a {
+  color: white;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news .grid article{
+  border-right: 2px solid black;
+}
+
+.news .grid article:last-child{
+  border-right: none;
+}
+
+main{
+  padding: 2.5em;
+}
+
+footer {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.videos {
+  background-color: black;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 0.7em;
+  margin: 1em;
+}
