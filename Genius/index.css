@@ -8,6 +8,21 @@ ul, ol{
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 3px solid black;
+  background-color: transparent;
+  padding: 0.7em;
+  margin: 1em;
+}
+
 header {
   background-color: yellow;
   display: flex;
@@ -44,41 +59,208 @@ nav a {
   color: white;
 }
 
-.grid{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.news .grid article{
-  border-right: 2px solid black;
-}
-
-.news .grid article:last-child{
-  border-right: none;
-}
 
 main{
   padding: 2.5em;
 }
 
-footer {
-  background-color: black;
+section{
+  margin: min(20%, 100px) 0;
 }
 
-ul {
-  list-style: none;
+table{
+  display: flex;
+  margin: 20px 0;
 }
 
-a {
-  text-decoration: none;
+tbody{
+  width: 100%;
+}
+
+tr{
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h2{
+  font-size: 4.5em;
+  font-weight: 600;
+  margin: 0px;
+}
+
+
+h3{
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.news{
+  margin-top: 30px;
+}
+
+.news a{
+  color: rgb(19, 19, 19);
+}
+
+.news h4{
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.news .mainArticle{
+  font-size: 2.5em;
+  margin: 5px;
+}
+
+.author{
+  font-size: 0.9em;
+}
+
+.news span{
+  color: rgb(196, 195, 195);
+}
+
+.feature{
+  margin: 30px 15px;
+}
+
+.articleHeader{
+  align-items: center;
+  display: flex;
+}
+
+.articleHr{
+  width: 100%;
+  margin: 0 10px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex article{
+  border-right: 2px solid black;
+  padding: 0 15px;
+  flex: 1;
+}
+
+.flex article:last-child{
+  border-right: none;
+}
+
+.featureTitle{
+  margin-bottom: 150px;
+}
+
+.center{
+  text-align: center;
+}
+
+.secondTitle{
+  color: #ff1464;
+  font-size: 0.9em;
+}
+
+#trendingGenres{
+  margin: 30px;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.trackName,
+.trackArtist{
+  font-size: 1.2em;
+}
+
+.trackName span{
+  font-size: 0.7em;
+  color: rgb(196, 195, 195);
+}
+
+.trackNumber{
+  flex: 0.2;
+}
+
+.trackCover{
+  flex: 0.2;
+}
+ 
+.trackName{
+  max-width: 50%;
+}
+
+.trackArtist{
+  flex: 1;
+}
+
+.trackViews{
+  flex: auto;
 }
 
 .videos {
   background-color: black;
+  color: white;
+  padding: 30px 0;
 }
 
-.button {
-  border: 1px solid black;
-  padding: 0.7em;
-  margin: 1em;
+.videos img{
+  margin: 30px;
+}
+
+.videos button{
+  color: white;
+  border-color: white;
+}
+
+.videos .secondTitle{
+  color: yellow;
+}
+
+.videoDescription{
+  border-top: 3px solid white;
+  padding: 15px;
+  color: white;
+  text-align: left;
+}
+
+.articles{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.articles article{
+  margin: 10px;
+  flex: 4;
+  text-align: left;
+}
+
+.articles img{
+  margin: auto;
+}
+
+.latest a{
+  color: rgb(19, 19, 19);
+}
+
+.latest h4{
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer a{
+  color: white;
+}
+
+.footerUpperPart{
+  display: flex;
 }

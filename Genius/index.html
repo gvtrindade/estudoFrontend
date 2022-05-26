@@ -70,105 +70,158 @@
 
     <section class="news">
       <article class="feature">
-        <a href="">
-          <h3 id="featureTitle">FEATURE</h3>
-          <h4>Genius Community Playlist April 2022</h4>
-          <p>Check out the latest tracks from Young Lean, Bree Runway, Pollari & Blu DeTiger</p>
-          <p>by streetlights / Apr 29 2022</p>
+        <a href="" style="display:flex;">
+          <div style="flex:1;">
+            <div class="articleHeader">
+              <h3>FEATURE</h3>
+              <hr class="articleHr">
+            </div>
+            <h4 class="mainArticle">Genius Community Playlist April 2022</h4>
+            <p>Check out the latest tracks from Young Lean, Bree Runway, Pollari & Blu DeTiger</p>
+            <p class="author">by streetlights / <span>Apr 29 2022</span></p>
+          </div>
+          <img width="100px" src="assets/images/community_playlists.gif" alt="Genius Community Playlists"
+            style="flex:1;">
         </a>
       </article>
 
-      <div class="grid">
-        <article class="news col-3">
+      <div class="flex">
+        <article>
           <a href="">
             <h3>NEWS</h3>
-            <h4>Read All the Lyrics To Kehlani's New Album 'Blue Water Road'</h4>
-            <p>by Leah Degrazia / Apr 29 2022</p>
-            <img src="" alt="Image of Kehlani on the beach">
+            <h4 class="featureTitle">Read All the Lyrics To Kehlani's New Album 'Blue Water Road'</h4>
+            <p class="author">by Leah Degrazia / <span>Apr 29 2022</span></p>
+            <img width="100px" src="assets/images/blue_water_road.png" alt="Image of Kehlani on the beach">
           </a>
         </article>
-        <article class="col-3"></article>
-        <article class="news col-3">
+        <article></article>
+        <article>
           <a href="">
             <h3>NEWS</h3>
-            <h4>Justin Bieber Links With Don Toliver On New Song 'Honest'</h4>
-            <p>by Leah Degrazia / Apr 29 2022</p>
-            <img src="" alt="Cover for the single Honest">
+            <h4 class="featureTitle">Justin Bieber Links With Don Toliver On New Song 'Honest'</h4>
+            <p class="author">by Leah Degrazia / <span>Apr 29 2022</span></p>
+            <img width="100px" src="assets/images/honest.jpg" alt="Cover for the single Honest">
           </a>
         </article>
-        <article class="news col-3">
+        <article>
           <a href="">
             <h3>NEWS</h3>
-            <h4>Real All The Lyrics To Future's New Album 'I NEVER LIKED YOU'</h4>
-            <p>by Ken Partridge / Apr 29 2022</p>
-            <img src="" alt="Image of Kehlani on the beach">
+            <h4 class="featureTitle">Real All The Lyrics To Future's New Album 'I NEVER LIKED YOU'</h4>
+            <p class="author">by Ken Partridge / <span>Apr 29 2022</span></p>
+            <img width="100px" src="assets/images/i_never_liked_you.jpg" alt="Image of Kehlani on the beach">
           </a>
         </article>
       </div>
     </section>
 
-    <section class="charts">
+    <section class="charts center">
       <h2>CHARTS</h2>
-      <span>TRENDING ON GENIUS</span>
-      <select name="trendingGenres" id="trendingGenres"></select>
+      <span class="secondTitle">TRENDING ON GENIUS</span>
+      <br>
+      <select name="trendingGenres" id="trendingGenres">
+        <option value="">SONGS / ALL GENRES / TODAY</option>
+      </select>
       <table>
         <tr>
           <a href="">
-            <td>1</td>
-            <td>
-              <img src="" alt="Cover for the Future's album 'I NEVER LIKED YOU'">
+            <td class="trackNumber">1</td>
+            <td class="trackCover">
+              <img width="50px" src="assets/images/i_never_liked_you.jpg"
+                alt="Cover for the Future's album 'I NEVER LIKED YOU'">
             </td>
-            <td>
-              <span class="songName">WAIT FOR U</span> LYRICS
+            <td class="trackName">
+              WAIT FOR U
+              <span>LYRICS</span> 
             </td>
-            <td>
-              Future
+            <td class="trackArtist">
+              FUTURE
             </td>
-            <td>
-              77
-            </td>
-            <td>
+            <td class="trackViews">
+              <i class="fa fa-eye"></i>
               157.4K
             </td>
           </a>
         </tr>
       </table>
-      <a class="button" href="">LOAD MORE</a>
+      <button>LOAD MORE</button>
     </section>
 
-    <section class="videos">
+    <section class="videos center">
       <h2>VIDEOS</h2>
-      <span>GENIUS ORIGINAL SERIES</span>
+      <span class="secondTitle">GENIUS ORIGINAL SERIES</span>
       <article>
-        <a href="">
-          <img src="" alt="">
-          <p>Omerettá the Grea Breaks Down The Meaning of 'Sorry Not Sorry'</p>
-          <p>Learn about the song's lyrics on the latest episode of 'Verified'.</p>
-          <p>by ButterflyHoney / Apr 29 2022</p>
+        <a href="" style="display:flex;">
+          <div style="flex:3;">
+            <img width="500px" src="assets/images/video_preview.jpg" alt="">
+          </div>
+          <div class="videoDescription">
+            <p>Omerettá the Grea Breaks Down The Meaning of 'Sorry Not Sorry'</p>
+            <p>Learn about the song's lyrics on the latest episode of 'Verified'.</p>
+            <p>by ButterflyHoney / Apr 29 2022</p>
+          </div>
         </a>
       </article>
-      <a class="button" href="">LOAD MORE</a>
+      <button>LOAD MORE</button>
     </section>
 
-    <section class="latest">
+    <section class="latest center">
       <h2>LATEST</h2>
-      <span>MOST RECENT NEWS</span>
-      <article class="feature">
-        <a href="">
-          <h3 id="featureTitle">FEATURE</h3>
-          <h4>Genius Community Playlist April 2022</h4>
-          <p>by streetlights / Apr 29 2022</p>
-        </a>
-      </article>
-      <a class="button" href="">LOAD MORE</a>
+      <span class="secondTitle">MOST RECENT NEWS</span>
+      <div class="articles">
+        <article>
+          <a href="">
+            <div class="articleHeader">
+              <h3>FEATURE</h3>
+              <hr class="articleHr">
+            </div>
+            <img width="200px" src="assets/images/community_playlists.gif" alt="Genius Community Playlists" style="flex:1;">
+            <h4>Genius Community Playlist April 2022</h4>
+            <p class="author">by streetlights / <span>Apr 29 2022</span></p>
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <div class="articleHeader">
+              <h3>NEWS</h3>
+              <hr class="articleHr">
+            </div>
+            <img width="100px" src="assets/images/blue_water_road.png" alt="Image of Kehlani on the beach">
+            <h4 class="">Read All the Lyrics To Kehlani's New Album 'Blue Water Road'</h4>
+            <p class="author">by Leah Degrazia / <span>Apr 29 2022</span></p>
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <div class="articleHeader">
+              <h3>NEWS</h3>
+              <hr class="articleHr">
+            </div>
+            <img width="100px" src="assets/images/honest.jpg" alt="Cover for the single Honest">
+            <h4 class="">Justin Bieber Links With Don Toliver On New Song 'Honest'</h4>
+            <p class="author">by Leah Degrazia / <span>Apr 29 2022</span></p>
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <div class="articleHeader">
+              <h3>NEWS</h3>
+              <hr class="articleHr">
+            </div>
+            <img width="100px" src="assets/images/i_never_liked_you.jpg" alt="Image of Kehlani on the beach">
+            <h4 class="">Real All The Lyrics To Future's New Album 'I NEVER LIKED YOU'</h4>
+            <p class="author">by Ken Partridge / <span>Apr 29 2022</span></p>
+          </a>
+        </article>
+      </div>
+      <button>LOAD MORE</button>
     </section>
 
-    <section class="community">
+    <section class="community center">
       <h2>COMMUNITY</h2>
-      <span>GENIUS' COMMUNITY OF CONTRIBUTORS POWERS THE WORLD'S BIGGEST COLLECTION OF SONG LYRICS AND MUSICAL
-        KNOWLEDGE.</span>
-      <a class="button" href="">JOIN OUR COMMUNITY</a>
-      <a class="button" href="">LEAR HOW GENIUS WORKS</a>
+      <p class="secondTitle" style="width: clamp(380px, 45%, 510px); margin: 0 auto; margin-bottom: 20px; ">GENIUS' COMMUNITY OF CONTRIBUTORS POWERS THE WORLD'S BIGGEST COLLECTION OF SONG LYRICS AND MUSICAL
+        KNOWLEDGE.</p>
+      <button>JOIN OUR COMMUNITY</button>
+      <button>LEAR HOW GENIUS WORKS</button>
       <table>
         <tr>
           <th>RANK</th>
@@ -178,16 +231,18 @@
         <tr>
           <td>1</td>
           <td>
-            <img src="" alt="">
-            <div>
-              <p>SmashBeezy</p>
-              <p>CONTRIBUTOR</p>
+            <div style="display: flex; align-items: center;">
+              <img width="50px" height="50px" style="border-radius:50%;" src="assets/images/blue_water_road.png" alt="">
+              <div>
+                <p>SmashBeezy</p>
+                <p>CONTRIBUTOR</p>
+              </div>
             </div>
           </td>
           <td>10,542</td>
         </tr>
       </table>
-      <a class="button" href="">LOAD MORE</a>
+      <button>LOAD MORE</button>
     </section>
 
   </main>
@@ -195,78 +250,81 @@
 
   <footer>
 
-    <div>
-      <p>Genius is the world's biggest collection of song lyrics and musical knowledge</p>
-      <ul>
-        <li>
-          <a href="">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <div class="footerUpperPart">
 
-    <div>
-      <ul>
-        <li>
-          <a href="">About Genius</a>
-        </li>
-        <li>
-          <a href="">Contributor Guidelines</a>
-        </li>
-        <li>
-          <a href="">Press</a>
-        </li>
-        <li>
-          <a href="">Shop</a>
-        </li>
-        <li>
-          <a href="">Advertise</a>
-        </li>
-        <li>
-          <a href="">Event Space</a>
-        </li>
-        <li>
-          <a href="">Privacy Policy</a>
-        </li>
-      </ul>
-      <span>© 2022 Genius Media Group Inc.</span>
-    </div>
+      <div>
+        <p>Genius is the world's biggest collection of song lyrics and musical knowledge</p>
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <div>
-      <ul>
-        <li>
-          <a href="">Licensing</a>
-        </li>
-        <li>
-          <a href="">Jobs</a>
-        </li>
-        <li>
-          <a href="">Developers</a>
-        </li>
-        <li>
-          <a href="">Copyright Policy</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
-        <li>
-          <a href="">Sign In</a>
-        </li>
-        <li>
-          <a href="">Do Not Sell My Personal Information</a>
-        </li>
-      </ul>
-      <a href="">Terms of Use</a>
+      <div>
+        <ul>
+          <li>
+            <a href="">About Genius</a>
+          </li>
+          <li>
+            <a href="">Contributor Guidelines</a>
+          </li>
+          <li>
+            <a href="">Press</a>
+          </li>
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">Advertise</a>
+          </li>
+          <li>
+            <a href="">Event Space</a>
+          </li>
+          <li>
+            <a href="">Privacy Policy</a>
+          </li>
+        </ul>
+        <span>© 2022 Genius Media Group Inc.</span>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <a href="">Licensing</a>
+          </li>
+          <li>
+            <a href="">Jobs</a>
+          </li>
+          <li>
+            <a href="">Developers</a>
+          </li>
+          <li>
+            <a href="">Copyright Policy</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+          <li>
+            <a href="">Sign In</a>
+          </li>
+          <li>
+            <a href="">Do Not Sell My Personal Information</a>
+          </li>
+        </ul>
+        <a href="">Terms of Use</a>
+      </div>
     </div>
 
     <hr>
