@@ -1,0 +1,114 @@
+:root {
+  --main-color: #ffff64;
+  --secondary-color: #121212;
+  --main-color-pastel: #E2EC95;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul, ol{
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: var(--main-color);
+  height: 6em;
+}
+
+main{
+
+}
+
+.feature img{
+  width: 100%;
+}
+
+.videos{
+  background-color: var(--secondary-color);
+  color: white; 
+}
+
+.videos img{
+  width: 100%;
+}
+
+.articles article{
+  padding: 10%;
+}
+
+.articles img{
+  width: 100%;
+}
+
+.articleHeader{
+  display: flex;
+  align-items: center;
+}
+
+.articleHeader h3{
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.articleHeader hr{
+  width: 100%;
+  height: 0;
+  margin-left: 0.3em;
+}
+
+.author{
+  font-size: 0.8em;
+}
+
+.author span{
+  color: lightslategray;
+}
+
+footer{
+  background-color: var(--secondary-color);
+  color: white;
+  padding:1em 1.5em;
+}
+
+footer a{
+  color: white ;
+}
+
+.legalText, .verifiedArtists{
+  text-align: center;
+}
+
+.links li{
+  padding: 0.8em 0;
+}
+
+.hotSongs{
+  padding: 1em 0;
+}
+
+.hotSongs li{
+  font-size: 0.8em;
+  font-weight: 800;
+  list-style-type: disc;
+  padding: 0;
+}
+
+.hotSongs li:first-child{
+  list-style: none;
+}
+
+.legalText{
+  color: lightslategray;
+  font-size: 0.8em;
+}
